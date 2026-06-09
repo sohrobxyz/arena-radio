@@ -1,0 +1,34 @@
+:root {
+  --font-nav: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  /* The portfolio's custom ticker face isn't carried over → monospace fallback. */
+  --font-ticker: 'Courier New', ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #141414;
+  color: #fff;
+  font-family: var(--font-nav);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
